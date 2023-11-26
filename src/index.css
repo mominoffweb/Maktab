@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&display=swap");
+
+body {
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  overflow-x: hidden;
+}
+
+.btn {
+  border: 1px solid #fff;
+}
+
+.modal,
+.ovelay {
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+}
+.ovelay {
+  background: rgb(219, 216, 214);
+}
+.modal-container {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  background: white;
+  max-width: 600px;
+  min-width: 300px;
+  border-radius: 30px;
+  transform: translate(-50%, -50%);
+  margin-top: 4rem;
+  padding: 15px;
+}
+.close-modal {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 5px 7px;
+}
+.student {
+  background-image: url(./Images/Student.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 540px;
+  padding-left: -5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.list {
+  list-style: disc;
+}
+
+.swiper-button-prev {
+  color: white !important;
+  background: rgba(0, 0, 0, 0.175);
+  backdrop-filter: blur(3px);
+  border-radius: 50%;
+  /* margin-left: rem; */
+  width: 50px;
+  height: 50px;
+}
+.swiper-button-next {
+  color: white !important;
+  background: rgba(0, 0, 0, 0.175);
+  backdrop-filter: blur(3px);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+.inp {
+  border: 1px solid var(--black-40, rgba(0, 16, 53, 0.4));
+}
+
+.footer {
+  border-top: 1px solid var(--Dark, #666e82);
+  border-bottom: 1px solid var(--Dark, #666e82);
+}
